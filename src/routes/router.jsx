@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from '../views/Home'
 import Blog from '../views/Blog'
 import About from '../views/About'
-import NotFound from "../views/NotFound";
+import NotFound from '../views/Notfound'
 import Layout from '../layout/Layout'
 import Card from '../views/Card'
 import { getCharacters } from "../api/getCharacters";

@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router-dom'
-import Pagination from '../components/Pagination'
 
 const Layout = () => {
   let titulo="Rick & Morty API"

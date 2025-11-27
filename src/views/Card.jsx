@@ -14,16 +14,13 @@ const Card = () => {
             <div className="card-body">
                 <h5 className="card-title text-primary">{character.name}</h5>
                 <p>
-                  <span fw-bold>Estado: </span>{character.status}
+                  <span className='fw-bold'>Estado: </span>{character.status}
                 </p>
                 <p>
-                  <span fw-bold>Genero: </span>{character.location.name}
+                  <span className='fw-bold'>Genero: </span>{character.location.name}
                 </p>
                 <p>
-                  <span fw-bold>Origen: </span>{character.origin.name}
-                </p>
-                <p>
-                  <span fw-bold></span>
+                  <span className='fw-bold'>Origen: </span>{character.origin.name}
                 </p>
             </div>
         </div>
