@@ -1,0 +1,47 @@
+/* ===== Fondo general ===== */
+.portal-container {
+  height: 100vh;
+  background: radial-gradient(circle at center, #0b002c, #000000 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== Portal verde animado ===== */
+.portal {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, 
+      rgba(0, 255, 0, 0.9) 0%, 
+      rgba(0, 180, 0, 0.6) 40%, 
+      rgba(0, 100, 0, 0.4) 70%, 
+      transparent 100%
+  );
+  position: absolute;
+  animation: swirl 6s infinite linear;
+  box-shadow: 0 0 60px 25px rgba(0, 255, 0, 0.5);
+}
+
+/* ===== Movimiento tipo portal ===== */
+@keyframes swirl {
+  0% {
+    transform: rotate(0deg) scale(1);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+    filter: hue-rotate(40deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+/* ===== Contenido dentro del portal ===== */
+.portal-content {
+  z-index: 10;
+}
